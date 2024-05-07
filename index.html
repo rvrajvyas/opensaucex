@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Monitoring App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #007bff;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+        .card {
+            background-color: #444;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .card-content {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+        .command {
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-family: monospace;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="galaxy.png" alt="Galaxy" class="logo">
+            <h1>Project-X</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Overview</h2>
+        <p>Welcome to Project-X! This application allows you to monitor the uptime, page speed, and performance of your websites in real-time.</p>
+        <ul>
+            <li>Monitor multiple websites simultaneously</li>
+            <li>Receive alerts and notifications when a website goes down</li>
+            <li>Analyze historical performance data and trends</li>
+            <li>Integrate with other tools and services</li>
+        </ul>
+        <h2>Installation</h2>
+        <p>To install Project-X locally on Docker, follow these steps:</p>
+        <ol>
+            <li>Ensure you have Docker Desktop installed on your machine. If not, download and install it from <a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener noreferrer">here</a>.</li>
+            <li>Download the Docker Compose file:</li>
+            <pre class="command">wget https://raw.githubusercontent.com/your-username/website-monitoring-app/main/docker-compose.yml</pre>
+            <li>Run the Docker Compose script:</li>
+            <pre class="command">docker-compose up -d</pre>
+        </ol>
+        <p>Once the containers are up and running, you can access the application in your web browser.</p>
+    </div>
+    <div class="container">
+        <h2>Features</h2>
+        <div class="card">
+            <h3 class="card-title">Real-time Monitoring</h3>
+            <p class="card-content">Monitor your websites in real-time to ensure uptime and performance.</p>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Alerts & Notifications</h3>
+            <p class="card-content">Receive instant alerts and notifications via email or SMS when a website goes down.</p>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Historical Data Analysis</h3>
+            <p class="card-content">Analyze historical performance data and trends to identify patterns and optimize website performance.</p>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Integration</h3>
+            <p class="card-content">Integrate with other tools and services such as Slack, PagerDuty, and more.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Connect with Us</h2>
+        <p>Follow us on social media for updates and news:</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</body>
+</html>
