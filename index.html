@@ -17,7 +17,7 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 40px 0; /* Increased padding for larger background */
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -107,15 +107,48 @@
             font-family: monospace;
             word-wrap: break-word;
         }
+        .project-x {
+            font-family: 'Entangle', sans-serif; /* Use Entangle font */
+            font-size: 2.5rem; /* Increase font size */
+        }
+        .slogan {
+            font-size: 1rem; /* Adjust size of the slogan */
+            margin-top: 5px; /* Add some spacing between Project-X and the slogan */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px; /* Add margin between slogan and buttons */
+        }
+        .border-button {
+            border: 2px solid #fff;
+            background: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px; /* Adjust margin between buttons */
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .border-button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="galaxy.png" alt="Galaxy" class="logo">
-            <h1>Project-X</h1>
+            <div class="title">
+                <h1 class="project-x">Project-X</h1>
+                <p class="slogan">Creating for people</p>
+                <div class="button-container">
+                    <button class="border-button">a</button>
+                    <button class="border-button">b</button>
+                </div>
+            </div>
         </div>
     </header>
+
     <div class="container">
         <h2>Overview</h2>
         <p>Welcome to Project-X! This application allows you to monitor the uptime, page speed, and performance of your websites in real-time.</p>
@@ -136,6 +169,7 @@
         </ol>
         <p>Once the containers are up and running, you can access the application in your web browser.</p>
     </div>
+
     <div class="container">
         <h2>Features</h2>
         <div class="card">
@@ -155,6 +189,7 @@
             <p class="card-content">Integrate with other tools and services such as Slack, PagerDuty, and more.</p>
         </div>
     </div>
+
     <div class="container">
         <h2>Connect with Us</h2>
         <p>Follow us on social media for updates and news:</p>
